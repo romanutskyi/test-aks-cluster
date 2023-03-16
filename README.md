@@ -8,12 +8,12 @@ Docker images for containers are uploaded to the Docker repository using the my-
 
 
 
-send.py 
+message-queue.py
 We define the queue connection string queue_connection_string and the queue name queue_name and then use the send_message() method of the queue client to send the message. To delay sending a message, we use the sleep() function of the time module.
 
 
 
-receive.py 
+hello-world.py 
 For each message, we call the start_container() function, which starts a container with the image my-docker-registry/hello-world:latest and passes the message from the queue to it as the MESSAGE environment variable. We then remove the message from the queue using the queue client's delete_message() method.
 
 
