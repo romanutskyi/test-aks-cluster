@@ -17,11 +17,11 @@ spec:
         image: my-docker-registry/message-queue:latest
         env:
         - name: AZURE_STORAGE_CONNECTION_STRING
-          value: "<connection-string>"
+          value: "DefaultEndpointsProtocol=https;AccountName=tteststorageechnorely;AccountKey=tLS2Pt1DH9LEnG/9gDXyO73O7N6pVVRTx2pXDrXd4oT5mT5fAS1R7gNvzEPJBGsW1mjpc5W9XzCl+AStl0Dfhg==;EndpointSuffix=core.windows.net"
       - name: hello-world
         image: my-docker-registry/hello-world:latest
         env:
         - name: AZURE_STORAGE_CONNECTION_STRING
-          value: "<connection-string>"
+          value: "DefaultEndpointsProtocol=https;AccountName=tteststorageechnorely;AccountKey=tLS2Pt1DH9LEnG/9gDXyO73O7N6pVVRTx2pXDrXd4oT5mT5fAS1R7gNvzEPJBGsW1mjpc5W9XzCl+AStl0Dfhg==;EndpointSuffix=core.windows.net"
       imagePullSecrets:
       - name: my-registry-secret
